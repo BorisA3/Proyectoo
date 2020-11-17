@@ -21,7 +21,6 @@ const usuarioSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-  roles:[],
   ciudad: String,
   pais: String,
   token: String,
