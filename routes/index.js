@@ -33,6 +33,7 @@ router.get("/", (req, res, next) => {
   
 });
 
+
 router.get("/home", (req,res,next)=>{
   let tipo = "";
   if(req.user != null){
