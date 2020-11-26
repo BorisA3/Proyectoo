@@ -26,7 +26,7 @@ passport.use(
               message: "¡El correo electrónico no se encuentra registrado!",
               alertType: "danger",
             },
-          
+            
         ]),
         );
       }
