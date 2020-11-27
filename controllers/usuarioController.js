@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const Usuario = mongoose.model("Usuarios");
 const { validationResult } = require("express-validator");
 const { reset } = require("nodemon");
-const year = new Date().getFullYear();
 
+const year = new Date().getFullYear();
 
 // Procesar el formulario de creación de cuenta
 exports.crearCuenta = async (req, res, next) => {
@@ -47,7 +47,6 @@ exports.crearCuenta = async (req, res, next) => {
       });
       req.flash("messages", messages);
 
-      
       res.redirect("/");
     } catch (error) {
       messages.push({
@@ -55,10 +54,7 @@ exports.crearCuenta = async (req, res, next) => {
         alertType: "danger",
       });
       req.flash("messages", messages);
-      
       res.redirect("/");
     }
   }
 };
-
-

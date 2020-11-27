@@ -33,7 +33,6 @@ router.get("/", (req, res, next) => {
   
 });
 
-
 router.get("/home", (req,res,next)=>{
   let tipo = "";
   if(req.user != null){
@@ -50,8 +49,6 @@ router.get("/home", (req,res,next)=>{
     pagActual
   });
 });
-
-
 
 router.get("/cerrar-sesion",authController.cerrarSesion)
 
@@ -72,10 +69,6 @@ router.post(
   ],
   usuarioController.crearCuenta
 );
-
-
-
-
 
 router.post("/iniciar-sesion", authController.autenticarUsuario);
 
