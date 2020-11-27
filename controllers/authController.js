@@ -3,7 +3,7 @@ const passport = require("passport");
 const mongoose = require("mongoose");
 const crypto = require("crypto");
 const Usuario = mongoose.model("Usuarios");
-const enviarCorreo = require("../handlers/email");
+const enviarCorreo = require("../handlebars/email");
 const { send } = require("process");
 
 // Se encarga de autenticar el usuario y de redireccionarlo
