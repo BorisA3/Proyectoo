@@ -4,7 +4,7 @@
   "description": "El proyecto",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemo ./index.js",
+    "dev": "nodemon ./index.js",
     "watch": "webpack --watch --mode development",
     "start": "node ./index.js",
     "build": "webpack"
